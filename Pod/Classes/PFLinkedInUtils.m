@@ -265,7 +265,12 @@ NSString *kPFLinkedInCreationKey = @"linkedin_token_created_at";
     NSString *profileID = nil;
     NSString *profileURL = responseDict[@"siteStandardProfileRequest"][@"url"];
     
-    if (profileURL)
+    // Hack - To work with oconnect web app
+    NSString *receivedId = responseDict[@"id"];
+    if (receivedId) {
+        profileID = receivedId;
+    }
+    else if (profileURL)
     {
         NSString *params = [[profileURL componentsSeparatedByString:@"?"] lastObject];
         if (params)
