@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
   s.name             = "PFLinkedInUtils"
-  s.version          = "0.1.8"
+  s.version          = "0.1.9"
   s.summary          = "The PFLinkedInUtils class provides utility functions for working with LinkedIn in a Parse application."
   s.description      = <<-DESC
-											 The PFLinkedInUtils class provides utility functions for working with LinkedIn in a Parse application.
-
-											 This class is currently for iOS only.
-
-											 ![PFLinkedInUtils Screenshot](https://raw.githubusercontent.com/alexruperez/PFLinkedInUtils/master/screenshot.png)
-                       DESC
+  The PFLinkedInUtils class provides utility functions for working with LinkedIn in a Parse application.
+  
+  This class currently supports iOS only.
+  
+  ![PFLinkedInUtils Screenshot](https://raw.githubusercontent.com/alexruperez/PFLinkedInUtils/master/screenshot.png)
+  DESC
   s.homepage         = "https://github.com/alexruperez/PFLinkedInUtils"
   s.screenshots      = "https://raw.githubusercontent.com/alexruperez/PFLinkedInUtils/master/screenshot.png"
   s.license          = 'MIT'
@@ -20,9 +20,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 	
   s.source_files = 'Pod/Classes'
-  s.resource_bundles = {
-    'PFLinkedInUtils' => ['Pod/Assets/*.png']
-  }
 
   s.ios.vendored_frameworks = 'Pod/Frameworks/linkedin-sdk.framework'
 	
